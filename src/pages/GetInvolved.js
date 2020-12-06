@@ -17,7 +17,7 @@ const GetInvolved = () => {
           Join our cool team
           </p>
         </div>
-        <Link className="butn aft-btn" to="/" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Apply</Link>
+        <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdy1IwVayC4PrCBWkLeIXTKSbPeYIZdzGjzK_olB9ffOiAHLA/viewform?usp=sf_link" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Apply</a>
       </div>
       <div className="container" style={{width: "45%"}}>
         <div className='t-container'>
@@ -31,7 +31,7 @@ const GetInvolved = () => {
           Submit a project proposal and we’ll make your dreams come true.
           </p>
         </div>
-        <Link className="butn aft-btn" to="/" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Apply</Link>
+        <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd6afL14jPtALWlvHL_GlgFMo828jGXGcMQMAZfe5ZzcM9ULA/viewform?usp=sf_link" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Apply</a>
       </div>
     </div>
   )

@@ -10,16 +10,16 @@ function HeaderTypingAnimation() {
             <div className='header-container'>
               <div className='text-container'>
                 <h1>
-                  Using Software
+                  using software
                 </h1>
                 <p>
                   for{' '}
                   <Typical
                     steps={[
-                      'AAAAA\.', 1200,
-                      'BBBBB\.', 1200,
-                      'CCCCC\.', 1200,
-                      'DDDDD\.', 1200
+                      'good.', 2000,
+                      'our community.', 2000,
+                      'the planet.', 2000,
+                      'humanity.', 2000
                     ]}
                     loop={Infinity}
                     wrapper='b'
@@ -33,4 +33,4 @@ function HeaderTypingAnimation() {
     )
 }
 
-export default HeaderTypingAnimation
+export default HeaderTypingAnimation;
