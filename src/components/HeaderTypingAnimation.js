@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeaderTypingAnimation.css';
 import Typical from 'react-typical';
+import { Link } from 'react-router-dom';
 
 function HeaderTypingAnimation() {
     return(
@@ -25,9 +26,7 @@ function HeaderTypingAnimation() {
                   />
                 </p>
               </div>
-              <div className='button-container'>
-                <div className='dummyButton'>Dummy Get Involved Button</div>
-              </div>
+              <Link className='dummyButton' to="/getinvolved" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Get Involved</Link>
             </div>
           </div>  
         </>

@@ -1,18 +1,11 @@
 import React from 'react';
-import Nav from './components/Nav';
+import './pages.css';
 
-function About() {
+const About = () => {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <Test></Test>
+    <div className="background">
+
     </div>
-  );
-}
-
-const Test = () => {
-  return (
-    <h1> About Page... to be implemented</h1>
   )
 }
 

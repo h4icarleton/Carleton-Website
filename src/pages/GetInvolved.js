@@ -1,18 +1,39 @@
 import React from 'react';
-import Nav from './components/Nav';
+import { Link } from 'react-router-dom';
+import './pages.css';
 
-function GetInvolved() {
+const GetInvolved = () => {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <Test></Test>
+    <div className="background">
+      <div className="container" style={{width: "45%"}}>
+        <div className='t-container'>
+          <h1>
+            <span style={{color: "#5f0f85"}}>for</span> students
+          </h1>
+          <p>
+          Looking for a way to apply your CS skills that you’ve learned in class to help solve real-world problems that benefit the community? Looking to connect with a group of CS enthusiasts who believe in the power of coding to do good? 
+          <br />
+          <br />
+          Join our cool team
+          </p>
+        </div>
+        <Link className="butn aft-btn" to="/" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Apply</Link>
+      </div>
+      <div className="container" style={{width: "45%"}}>
+        <div className='t-container'>
+          <h1>
+            <span style={{color: "#5f0f85"}}>for</span> nonprofits
+          </h1>
+          <p>
+          Are you a nonprofit struggling without certain software? Are you in a niched field and you have a clear idea of your problem and think tech can help you? Hack4Impact @ Carleton is a group of diligent, motivated, and socially active cs-students that are committed to helping you achieve your goals.
+          <br />
+          <br />
+          Submit a project proposal and we’ll make your dreams come true.
+          </p>
+        </div>
+        <Link className="butn aft-btn" to="/" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Apply</Link>
+      </div>
     </div>
-  );
-}
-
-const Test = () => {
-  return (
-    <h1> Get Involved Page... to be implemented</h1>
   )
 }
 

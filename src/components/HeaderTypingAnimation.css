@@ -1,72 +1,75 @@
-.header-wrapper{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+.header-wrapper {
+  background-image: url("https://environmentnewjersey.org/sites/environment/files/WEB_AME_Renewable-Energy-101_Carleton-Wind_16x9.jpg");
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 
-.header-container{
-    border: 3px #282828 solid;
-    border-radius: 25px;
-    width: 50%;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
+.header-container {
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  width: 50%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
 }
 
-.text-container{
-    margin-top: -60px;
-    align-items: center;
+.text-container {
+  margin-top: -60px;
+  align-items: center;
 }
 
 .text-container > h1 {
-    color: #282828;
-    width: 100%;
-    font-size: 60px;
+  color: #282828;
+  width: 100%;
+  font-size: 60px;
 }
 
-.text-container > p{
-    color: #5F0F85;
-    font-size: 40px;
+.text-container > p {
+  color: #5f0f85;
+  font-size: 40px;
 }
 
-p > b{
-    color: #282828 !important;
+p > b {
+  color: #282828 !important;
 }
 
-.dummyButton{
-    margin: 6px;
-    border: 3px #282828 solid;
-    border-radius: 25px;
-    width: 100px;
+.dummyButton {
+  background-color: rgba(0, 62, 126, 1);
+  font-size: 40px;
+  margin: 6px;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 960px) {
-    .text-container > h1 {
-      font-size: 50px;
-    }
+  .text-container > h1 {
+    font-size: 50px;
+  }
 
-    .text-container > p{
-        font-size: 30px;
-    }
+  .text-container > p {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .header-container{
-        min-height: 35vh;
-    }
+  .header-container {
+    min-height: 35vh;
+  }
 
-    .text-container > h1 {
-        font-size: 30px;
-      }
-  
-      .text-container > p{
-        font-size: 20px;
-    }
+  .text-container > h1 {
+    font-size: 30px;
+  }
+
+  .text-container > p {
+    font-size: 20px;
+  }
 }

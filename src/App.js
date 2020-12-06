@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import HeaderTypingAnimation from './components/HeaderTypingAnimation';
-import Nav from './components/Nav';
+import Pages from './pages'
+
 
 function App() {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <HeaderTypingAnimation/>
+    <div className="App" style={{position : "absolute"}}>
+      <Pages />
     </div>
   );
 }
