@@ -1,0 +1,7 @@
+.magnify-when-hover{
+    transition: 'transform ease-in 0.2s';
+}
+
+.magnify-when-hover:hover{
+    transform: scale(1.1);
+}
