@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Pages from './pages'
-import ContactUs from './components/ContactUs'
+import Pages from './pages';
+import ContactUs from './components/ContactUs';
 
 
 function App() {
