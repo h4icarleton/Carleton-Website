@@ -10,7 +10,7 @@ const Nav = () => {
             <img id="ccLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Carleton_College_logo.svg/1280px-Carleton_College_logo.svg.png" alt="Carleton College"/>
         </Link>
 
-        <ul class="navbar-nav" style= {{position : 'absolute', right: '0px'}}>
+        <ul class="navbar-nav" style= {{position : 'absolute', right: '0px', fontSize: '22px', padding: '15px'}}>
             <li class="nav-item">
                 <Link class="nav-link" to="/">home</Link>
             </li>
