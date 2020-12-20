@@ -11,11 +11,11 @@ import BigProfiles from '../components/BigProfiles';
 
 const OurTeam = () => {
   return(
-    <div className="background" style={{flexDirection:'column', overflowY:'scroll', overflowX:'hidden'}}>
-      <div style={{height:'40vh', marginTop: '1200px', width:'100%', marginBottom:'auto'}}>
+    <div style={{flexDirection:'column', overflowY:'scroll', overflowX:'hidden'}}>
+      <div style={{height:'40vh', width:'100%', marginBottom:'auto'}}>
         <SliderContainer slides={BigProfiles} autoPlay={5}/>
       </div>
-      <div style={{marginTop:'200px', marginBottom:'200px', alignItems:'center', display:'flex', justifyContent:'space-bewteen', flexDirection:'column'}}>
+      <div style={{marginTop:'200px', marginBottom:'60px', alignItems:'center', display:'flex', justifyContent:'space-bewteen', flexDirection:'column'}}>
         <MemberProfileContainer>
           {
             <MemberProfile
