@@ -6,7 +6,6 @@ import GetInvolved from './GetInvolved';
 import OurTeam from './OurTeam';
 import Error from './Error';
 import Nav from '../components/TempNav';
-import ContactUs from '../components/ContactUs';
 
 const ReactRouterSetup = () => {
     return <Router>
@@ -28,7 +27,6 @@ const ReactRouterSetup = () => {
                 <Error />
             </Route>
         </Switch>
-        <ContactUs />
     </Router>;
 }
 
