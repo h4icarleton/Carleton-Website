@@ -31,10 +31,10 @@ class Dropdown extends Component {
     const { isListOpen } = this.state;
     return (
       <div className="dd-wrapper">
-        <h1 style={{ color : 'white', fontSize : '50px'}} onClick={this.handleClick}> {this.props.team} </h1>
+        <h1 style={{ color : 'white', fontSize : '50px', float: 'left'}} onClick={this.handleClick}> {this.props.team} </h1>
         {isListOpen
-          ? <i class="fas fa-angle-up"  style={{ color : 'white', fontSize : '50px', alignItems:'right'}}></i>
-          : <i class="fas fa-angle-down" style={{ color : 'white', fontSize : '50px', alignItems:'right'}}></i>}
+          ? <i class="fas fa-angle-up"  style={{ color : 'white', fontSize : '65px', float: 'right', marginLeft: '50px'}}></i>
+          : <i class="fas fa-angle-down" style={{ color : 'white', fontSize : '65px', float: 'right', marginLeft: '50px'}}></i>}
       <div className="dd-list">
 
       </div>
