@@ -26,7 +26,7 @@ function HeaderTypingAnimation() {
                   />
                 </p>
               </div>
-              <Link className='dummyButton' to="/getinvolved" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Get Involved</Link>
+              <Link className='dummyButton' to="/getinvolved" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>get involved</Link>
             </div>
           </div>  
         </>
