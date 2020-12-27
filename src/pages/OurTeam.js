@@ -14,7 +14,15 @@ const OurTeam = () => {
       </div>
       <div style={{marginTop:'200px', marginBottom:'60px', alignItems:'center', display:'flex', justifyContent:'space-bewteen', flexDirection:'column'}}>
         <MemberProfileContainer>
+          <Dropdown team="Development Team" key="Dev"/>
         </MemberProfileContainer>
+        <MemberProfileContainer>
+          <Dropdown team="Design && User Research Team" key="Design-User"/>
+        </MemberProfileContainer>
+        <MemberProfileContainer>
+          <Dropdown team="Code Review && Testing Team" key="Code-Test"/>
+        </MemberProfileContainer>
+
       </div>
     </div>);
 
