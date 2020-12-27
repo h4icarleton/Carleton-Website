@@ -2,24 +2,31 @@ import './Slides.css';
 
 const SliderNextButton = ({width, handleClick}) => (
     <div 
-        className = 'magnify-when-hover'
+        className = 'magnifyWhenHover'
         onClick={handleClick}
         style={
             {display: 'flex',
-            backgroundColor: 'white',
+            backgroundColor:'rgba(0, 0, 0, 0.1)',
             position: 'absolute',
-            height: '50px',
-            width: '100px',
+            height: '80px',
+            clipPath: 'circle(50% at 50% 50%)',
+            width: '80px',
             justifyContent: 'center',
-            top: '85%',
-            right: `${width/5}px`, 
+            right: '12%', 
             cursor: 'pointer',
             alignItems: 'center',
             borderRadius: '8px',
             fontSize: '30px'}
         }
     > 
-    Next
+    <i style={
+        {border: 'solid white',
+        borderWidth: '0 6px 6px 0',
+        display: 'inline-block',
+        padding: '8px',
+        marginLeft: '-8px',
+        transform: 'rotate(-45deg)'}
+  }></i>
     </div>
 )
 

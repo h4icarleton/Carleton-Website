@@ -11,9 +11,9 @@ import BigProfiles from '../components/BigProfiles';
 
 const OurTeam = () => {
   return(
-    <div style={{flexDirection:'column', overflowY:'scroll', overflowX:'hidden'}}>
-      <div style={{height:'40vh', width:'100%', marginBottom:'auto'}}>
-        <SliderContainer slides={BigProfiles} autoPlay={5}/>
+    <div style={{flexDirection:'column', overflowY:'scroll'}}>
+      <div style={{ width:'100%', marginBottom:'auto'}}>
+        <SliderContainer slides={BigProfiles} autoPlay={3.5}/>
       </div>
       <div style={{marginTop:'200px', marginBottom:'60px', alignItems:'center', display:'flex', justifyContent:'space-bewteen', flexDirection:'column'}}>
         <MemberProfileContainer>

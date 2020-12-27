@@ -4,16 +4,14 @@ import Slide from './Slide';
 import SliderNextButton from './SliderNextButton';
 
 const getWidth = () => window.innerWidth;
-const containerStyle = {position: 'relative',
-    height: '100%',
-    minHeight: '400px',
-    width: '100vw',
-    margin: '0 auto',
-    overflow: 'hidden',
-    whiteSpace: 'nowrap',
-    display: 'flex',
-    alignItems: 'center'
-};
+const containerStyle = {
+                            position: 'relative',
+                            height: '100%',
+                            width: '100vw', 
+                            whiteSpace: 'nowrap',
+                            display: 'flex',
+                            alignItems: 'center'
+                        };
 
 
 const SliderContainer = props => {
@@ -123,7 +121,7 @@ const SliderContainer = props => {
             width={getWidth()}
             handleClick={slideRight}
         />
-        </div>
+    </div>
 }
 
 export default SliderContainer;
