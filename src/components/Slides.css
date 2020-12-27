@@ -1,7 +1,102 @@
-.magnify-when-hover{
+.magnifyWhenHover{
     transition: 'transform ease-in 0.2s';
 }
 
-.magnify-when-hover:hover{
-    transform: scale(1.1);
+.magnifyWhenHover:hover{
+    transform: scale(1.03);
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.magnifyWhenHover:hover > i{
+    border: solid white !important;
+    border-width: 0 6px 6px 0 !important;
+    padding: 8px !important;
+    margin-left: -8px !important;
+    transform: rotate(-45deg) !important;
+}
+
+.bigProfile{
+    position: relative;
+}
+
+.hiddenComponent{
+    visibility: hidden;
+    z-index: -100;
+    position: absolute;
+}
+
+.ImageAndProfileInfoWrapperOnResize{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1400px){
+    
+}
+
+@media only screen and (max-width: 1200px){
+    .bigProfile{
+        flex-direction: column !important;
+    }   
+
+    .hiddenComponent{
+        visibility: visible !important;
+        z-index: 0 !important;
+        position: relative;
+        margin: 0 !important;
+
+    }
+
+    .ImageAndProfileInfoWrapperOnResize{
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .bigProfileInfoTextContainerOnResize{
+        align-content: center;
+        margin-left: 50px !important;
+    }
+
+    .bigProfileQuoteTextContainerOnResize{
+        width: 100% !important;
+        padding: 50px;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+    }
+    
+    .imageContainerOnResize{
+        width: 40% !important;
+        align-content: center;
+        clip-path: circle(50% at 50% 50%);
+    }
+    
+    .textContainerOnResize{
+        visibility: hidden !important;
+        z-index: -100 !important;
+        position: absolute !important;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .ImageAndProfileInfoWrapperOnResize{
+        flex-direction: column !important;
+        justify-content: space-between;
+        margin: 0 !important;
+        margin-top: 50px !important;
+    }
+
+    .bigProfileInfoTextContainerOnResize{
+        align-content: center;
+        margin-left: 0px !important;
+        margin-top: 50px !important;
+    }
 }

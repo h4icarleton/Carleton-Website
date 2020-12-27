@@ -5,8 +5,9 @@ import About from './About';
 import GetInvolved from './GetInvolved';
 import OurTeam from './OurTeam';
 import Error from './Error';
-import Nav from '../components/TempNav';
+import Nav from '../components/Nav';
 import ContactUs from '../components/ContactUs';
+
 
 const ReactRouterSetup = () => {
     return <Router>
