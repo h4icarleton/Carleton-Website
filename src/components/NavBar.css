@@ -1,0 +1,17 @@
+.navbar-nav {
+    position: absolute; 
+    right: 0px; 
+    font-size: 21px;
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 5px; 
+    font-family: Consolas;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}

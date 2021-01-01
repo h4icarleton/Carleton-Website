@@ -1,6 +1,7 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
 import './pages.css';
+import { Link } from 'react-router-dom';
 
 const GetInvolved = () => {
   return (
@@ -8,21 +9,22 @@ const GetInvolved = () => {
       <div className="flexing">
         <div className="containerf startf">
           <div className='t-container'>
-            <h1>
+            <h1 style={{fontFamily: "Consolas"}}>
               <span style={{color: "#5f0f85"}}>for</span> students
             </h1>
             <p>
             Looking for a way to apply your CS skills that you’ve learned in class to help solve real-world problems that benefit the community? Looking to connect with a group of CS enthusiasts who believe in the power of coding to do good? 
             <br />
             <br />
-            Join our cool team
+            Join
+            <span > <Link className = "link" to = '/ourteam'> our cool team </Link> </span>
             </p>
           </div>
-          <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdy1IwVayC4PrCBWkLeIXTKSbPeYIZdzGjzK_olB9ffOiAHLA/viewform?usp=sf_link" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Apply</a>
+          <a className="butn aft-btn mystyle" href="https://docs.google.com/forms/d/e/1FAIpQLSdy1IwVayC4PrCBWkLeIXTKSbPeYIZdzGjzK_olB9ffOiAHLA/viewform?usp=sf_link">apply</a>
         </div>
         <div className="containerf">
           <div className='t-container'>
-            <h1>
+            <h1 style={{fontFamily: "Consolas"}}>
               <span style={{color: "#5f0f85"}}>for</span> nonprofits
             </h1>
             <p>
@@ -32,7 +34,7 @@ const GetInvolved = () => {
             Submit a project proposal and we’ll make your dreams come true.
             </p>
           </div>
-          <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd6afL14jPtALWlvHL_GlgFMo828jGXGcMQMAZfe5ZzcM9ULA/viewform?usp=sf_link" style={{textDecoration : "none", color: "rgba(238, 177, 17, 1)" }}>Apply</a>
+          <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd6afL14jPtALWlvHL_GlgFMo828jGXGcMQMAZfe5ZzcM9ULA/viewform?usp=sf_link">apply</a>
         </div>
       </div>
     </div>

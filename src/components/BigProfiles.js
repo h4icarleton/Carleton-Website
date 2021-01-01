@@ -1,27 +1,57 @@
+import './Slides.css';
+
 const ImageContainer = ({imgPath}) => (
-    <div
+    <img
+        className='imageContainerOnResize'
+        src={`${process.env.PUBLIC_URL}${imgPath}`}
         style={
-            {height: '100%',
-            width: '45%',
-            borderRadius: '30px 0px 0px 30px',
-            backgroundImage: `url('${imgPath}')`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'noRepeat',
-            backgroundPosition: 'center'}
+            {width: '80%',
+            clipPath: 'circle(50% at 50% 50%)'}
         }
-    ></div>
+    ></img>
 )
 
+const BigProfileInfoTextContainer = ({textDict}) => (
+    <div
+        className='hiddenComponent bigProfileInfoTextContainerOnResize'
+    >
+        <NormalText normalText={textDict.name}/>
+        <NormalText normalText={textDict.position}/>
+        <NormalText normalText={textDict.classOf}/>
+    </div>
+)
+
+const BigProfileQuoteTextContainer = ({textDict}) => (
+    <div
+        className='hiddenComponent bigProfileQuoteTextContainerOnResize'
+    >
+        <div
+            style={
+                {height: '60%',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center'}
+            }
+        >
+            <BoldText boldText={textDict.quote}/>
+        </div>
+    </div>
+)
+
+/**
+ * Contains both the information and the quote of the BigProfiles Component
+ */
 const TextContainer = ({textDict}) => (
     <div
+        className='textContainerOnResize'
         style={
             {display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
             height: '80%',
             top: '5%',
-            width: '50%'
-            }
+            width: '100%',
+            padding: '30px'}
         }
     >
         <div
@@ -36,7 +66,8 @@ const TextContainer = ({textDict}) => (
         </div>
         <div
             style={
-                {height: '60%'}
+                {height: '60%',
+                marginTop: '3%'}
             }
         >
             <BoldText boldText={textDict.quote}/>
@@ -58,19 +89,23 @@ const BoldText = ({boldText}) => (
  * @param {dictionary} textDict consists of position, name, classOf, email, quote
  */
 const BigProfiles = ({imgPath, textDict}) => (
-    <div style={{backgroundColor: 'blue', height: '100%', borderRadius: '30px', display: 'flex', justifyContent: 'space-between'}}>
-        <ImageContainer imgPath={imgPath}/>
-        <TextContainer textDict={textDict}/>
+    <div className='bigProfile' style={{backgroundColor:'rgba(0, 0, 0, 0.3)', width: '100%', borderRadius: '30px', display: 'flex', justifyContent: 'space-between',position:'relative'}}>
+        <div className='ImageAndProfileInfoWrapperOnResize'>
+            <ImageContainer  imgPath={imgPath}/>
+            <BigProfileInfoTextContainer  textDict={textDict}/> {/*will only appear on small screen*/}
+        </div>
+        <TextContainer textDict={textDict}/> {/*will not appear on small screen*/}
+        <BigProfileQuoteTextContainer textDict={textDict}/> {/*will only appear on small screen*/}
     </div>
 )
-const randomQuote1 = "\" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a \"";
+const randomQuote1 = "\" Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took \"";
+const randomQuote2 = "\" Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took \"";
 const bigProfileArray =  [
-                            <BigProfiles imgPath={'https://images.unsplash.com/photo-1607113421429-96a7c613f649?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'} 
+                            <BigProfiles  imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
                                 textDict={{'position':'Project Lead', 'name':'Bob1 LastName','classOf': 2051, 'quote':`${randomQuote1}`}}/>,
-                            <BigProfiles imgPath={'https://images.unsplash.com/photo-1606636889299-1f309d44b3be?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'} 
-                                textDict={{'position':'Project Lead', 'name':'Bob2 Mid LastLast', 'classOf': 2020, 'quote':`${randomQuote1}`}}/>,
-                            <BigProfiles imgPath={'https://images.unsplash.com/photo-1606191027634-340159c45142?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'} 
+                            <BigProfiles imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
+                                textDict={{'position':'Project Lead', 'name':'Bob2 Mid LastLast', 'classOf': 2020, 'quote':`${randomQuote2}`}}/>,
+                            <BigProfiles imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
                                 textDict={{'position':'Project Lead', 'name':'Bob3 BlaBla','classOf': 2077, 'quote':`${randomQuote1}`}}/> 
                         ]
-
 export default bigProfileArray

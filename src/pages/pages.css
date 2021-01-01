@@ -2,6 +2,8 @@ body {
   background-image: url("https://environmentnewjersey.org/sites/environment/files/WEB_AME_Renewable-Energy-101_Carleton-Wind_16x9.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
   padding-top: 15vh;
@@ -36,10 +38,26 @@ body {
 
 .butn {
   background-color: rgba(0, 62, 126, 1);
+  color: rgb(238, 177, 17);
   font-size: 40px;
   margin: 6px;
   padding: 10px;
   border-radius: 25px;
+}
+
+.butn:hover {
+  background-color: rgb(238, 177, 17);
+  color: rgba(0, 62, 126, 1);
+}
+
+.link {
+  font-weight: bold; 
+  color: rgb(95, 15, 133); 
+  font-family: Consolas;
+}
+
+.link:hover{
+  color:  rgb(113, 74, 131)
 }
 
 .aft-btn {
