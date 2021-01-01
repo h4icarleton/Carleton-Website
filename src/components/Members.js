@@ -1,6 +1,31 @@
 import React from 'react';
 import MemberProfile from '../components/MemberProfile';
-import BigProfiles from '../components/BigProfiles';
+
+
+function MemberDisplay(){
+  members.forEach(person => {
+    return <MemberProfile fullName={props.fullName} position={props.position} classYear={props.classYear} imgPath={props.imgPath} email={props.email} linkedinProfileUrl={props.linkedinProfileUrl} />;
+  })
+}
+
+function MemberCheck(props){
+  members.forEach( member => {
+      if (member.team === props.teamIndex) {
+          return true;
+      }
+      return false;
+}
+/**
+ *
+ * @param props {team, status}
+ */
+const Members = (props) => {
+  const isListOpen = props.status;
+  const isMember = <MemberCheck teamIndex={props.team}/>
+  if (isListOpen && isMember){
+    return <MemberDisplay />
+  }
+}
 
 
 const members = [
@@ -240,3 +265,4 @@ const members = [
 
   }
 ];
+export default Members;
