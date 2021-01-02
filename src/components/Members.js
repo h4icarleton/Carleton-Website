@@ -4,7 +4,7 @@ import MemberProfile from '../components/MemberProfile';
 
 function MemberDisplay(){
   members.forEach(person => {
-    return <MemberProfile fullName={props.fullName} position={props.position} classYear={props.classYear} imgPath={props.imgPath} email={props.email} linkedinProfileUrl={props.linkedinProfileUrl} />;
+    return <MemberProfile fullName={person.fullName} position={person.position} classYear={person.classYear} imgPath={person.imgPath} email={person.email} linkedinProfileUrl={person.linkedinProfileUrl} />;
   })
 }
 
@@ -14,6 +14,7 @@ function MemberCheck(props){
           return true;
       }
       return false;
+    });
 }
 /**
  *
