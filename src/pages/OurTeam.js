@@ -12,6 +12,7 @@ const OurTeam = () => {
       <div style={{ width:'100%', marginBottom:'auto'}}>
         <SliderContainer slides={BigProfiles} autoPlay={3.5}/>
       </div>
+      {/*}
       <div style={{marginTop:'200px', marginBottom:'60px', alignItems:'center', display:'flex', justifyContent:'space-bewteen', flexDirection:'column'}}>
         <MemberProfileContainer>
           <Dropdown team="Development Team" teamIndex="Dev"/>
@@ -23,7 +24,7 @@ const OurTeam = () => {
           <Dropdown team="Code Review && Testing Team" teamIndex="Code-Testing"/>
         </MemberProfileContainer>
 
-      </div>
+      </div>*/}
     </div>);
 } // <MemberProfile fullName="Maya" position="Dev" classYear="2022" imgPath="/images/profilePictures/dummy-profile.jpeg" email="murphym2@carleton.edu" linkedinProfileUrl="https://www.linkedin.com/in/maya-murphy-56409a177/"/>
 
