@@ -17,7 +17,7 @@ const GetInvolved = () => {
             <br />
             <br />
             Join
-            <span > <Link className = "link" to = '/ourteam'> our cool team </Link> </span>
+            <span > <Link className = "link coolTeam" to = '/ourteam'> our cool team </Link> </span>
             </p>
           </div>
           <a className="butn aft-btn mystyle" href="https://docs.google.com/forms/d/e/1FAIpQLSdy1IwVayC4PrCBWkLeIXTKSbPeYIZdzGjzK_olB9ffOiAHLA/viewform?usp=sf_link">apply</a>
