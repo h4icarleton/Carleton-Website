@@ -15,11 +15,10 @@ class Dropdown extends Component {
   }
 
   handleClick() {
-    console.log('Click happened');
     const { isListOpen } = this.state;
-    isListOpen
+    {isListOpen
       ? this.setState({ isListOpen : false }, () => console.log(this.state.isListOpen))
-      : this.setState({ isListOpen : true }, () => console.log(this.state.isListOpen))
+      : this.setState({ isListOpen : true }, () => console.log(this.state.isListOpen))}
   }
   
   render () {
@@ -28,11 +27,10 @@ class Dropdown extends Component {
       <div className="dd-wrapper">
         <h1 style={{ color : 'white', fontSize : '50px', float: 'left'}} onClick={this.handleClick}> {this.props.team} </h1>
         {isListOpen
-          ? <i className="fas fa-angle-up"  onClick={this.handleClick} style={{ color : 'white', fontSize : '65px', float: 'right', marginLeft: '50px'}}></i>
-          : <i className="fas fa-angle-down" onClick={this.handleClick} style={{ color : 'white', fontSize : '65px', float: 'right', marginLeft: '50px'}}></i>}
-        // <MemberProfile fullName="Maya" position="Dev" classYear="2022" imgPath="/images/profilePictures/dummy-profile.jpeg" email="murphym2@carleton.edu" linkedinProfileUrl="https://www.linkedin.com/in/maya-murphy-56409a177/"/>
+          ? <i class="fas fa-angle-up"  onClick={this.handleClick} style={{ color : 'white', fontSize : '65px', float: 'right', marginLeft: '50px'}}></i>
+          : <i class="fas fa-angle-down" onClick={this.handleClick} style={{ color : 'white', fontSize : '65px', float: 'right', marginLeft: '50px'}}></i>}
 
-        <Members team={this.props.team} status={isListOpen}/>
+        {isListOpen && <Members team={this.props.team} status={isListOpen} shortTeam = {this.props.shortTeam}/>}
 
       </div>
     );

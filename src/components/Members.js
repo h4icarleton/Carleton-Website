@@ -2,30 +2,29 @@ import React from 'react';
 import MemberProfile from '../components/MemberProfile';
 
 
-function MemberDisplay(){
-  members.forEach(person => {
-    return <MemberProfile fullName={person.fullName} position={person.position} classYear={person.classYear} imgPath={person.imgPath} email={person.email} linkedinProfileUrl={person.linkedinProfileUrl} />;
-  })
-}
-
-function MemberCheck(props){
-  members.forEach( member => {
-      if (member.team === props.teamIndex) {
-          return true;
-      }
-      return false;
-    });
-}
 /**
  *
  * @param props {team, status}
  */
+// want to return MemberProfile
 const Members = (props) => {
   const isListOpen = props.status;
-  const isMember = <MemberCheck teamIndex={props.team}/>
-  if (isListOpen && isMember){
-    return <MemberDisplay />
-  }
+  const isMemberArray = []
+  members.map((person) => {
+      if (props.shortTeam === person.team){
+        isMemberArray.push(true)
+      } else {
+        isMemberArray.push(false)
+      }
+  })
+
+    return (<div>
+    {members.map((person, index) => (
+        isListOpen && isMemberArray[index] &&
+        <MemberProfile fullName={person.fullName} position={person.position} classYear={person.classYear} imgPath={person.imgPath} email={person.email} linkedinProfileUrl={person.linkedinProfileUrl} />
+    ))}
+    </div>)
+      
 }
 
 
