@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const GetInvolved = () => {
   return (
     <div>
-      <div className="flexing">
+      <div className = "flexing">
         <div className="containerf startf">
           <div className='t-container'>
             <h1 style={{fontFamily: "Consolas"}}>
