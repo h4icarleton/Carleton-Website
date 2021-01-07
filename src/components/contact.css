@@ -1,0 +1,21 @@
+.contact-us-footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    padding: 0.3rem;
+    background-color:  rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+@media screen and (max-width: 675px) {
+    .contact-us-footer {
+        position: unset;
+        height: min-content;
+    }
+
+    p {        
+        margin-bottom: 0 !important;
+    }
+}
