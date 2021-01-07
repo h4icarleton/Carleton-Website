@@ -1,5 +1,4 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
 import './pages.css';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ const GetInvolved = () => {
       <div className = "flexing">
         <div className="containerf startf">
           <div className='t-container'>
-            <h1 style={{fontFamily: "Consolas"}}>
+            <h1 style={{fontFamily: "Consolas"}} className='getInvh1'>
               <span style={{color: "#5f0f85"}}>for</span> students
             </h1>
             <p>
@@ -24,7 +23,7 @@ const GetInvolved = () => {
         </div>
         <div className="containerf">
           <div className='t-container'>
-            <h1 style={{fontFamily: "Consolas"}}>
+            <h1 style={{fontFamily: "Consolas"}} className='getInvh1'>
               <span style={{color: "#5f0f85"}}>for</span> nonprofits
             </h1>
             <p>
