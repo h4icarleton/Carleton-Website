@@ -85,6 +85,15 @@
     margin-bottom: 80px;
   }
 
+  .containerf .startf {
+    display: 'flex';
+    justify-content: 'center'; 
+    align-items: 'center'; 
+    width: '33%'; 
+    margin: 'auto'; 
+    height: '50%';
+  }
+
 }
 
 @media screen and (max-width: 443px) {
