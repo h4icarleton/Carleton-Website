@@ -1,6 +1,7 @@
 import React from 'react';
 import MemberProfile from '../components/MemberProfile';
-
+import MemberProfileContainer from '../components/MemberProfileContainer';
+import '../components/Slides.css'
 
 /**
  *
@@ -18,12 +19,12 @@ const Members = (props) => {
       }
   })
 
-    return (<div>
+    return (<MemberProfileContainer>
     {members.map((person, index) => (
         isListOpen && isMemberArray[index] &&
         <MemberProfile fullName={person.fullName} position={person.position} classYear={person.classYear} imgPath={person.imgPath} email={person.email} linkedinProfileUrl={person.linkedinProfileUrl} />
     ))}
-    </div>)
+    </MemberProfileContainer>)
       
 }
 
@@ -37,6 +38,15 @@ const members = [
       imgPath:'/images/profilePictures/dummy-profile.jpeg',
       email:'murphym2@carleton.edu',
       linkedinProfileUrl:'https://www.linkedin.com/in/maya-murphy-56409a177/',
+  },
+  {
+    fullName:'PJ Sangvong',
+    position:'Developer',
+    team:'Dev',
+    classYear:'2023',
+    imgPath:'/images/profilePictures/PJProfile.jpg',
+    email:'sangvongp@carleton.edu',
+    linkedinProfileUrl:'https://www.linkedin.com/in/sangvongp',
   },
   {
       fullName:'Henrie Friesen',

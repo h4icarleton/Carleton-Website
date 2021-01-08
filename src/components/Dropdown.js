@@ -1,6 +1,7 @@
-import Members from '../components/Members.js';
+import Members from './Members';
 import React, {Component} from 'react';
-import MemberProfile from '../components/MemberProfile'
+import DropDownContainer from './DropDownContainer'
+import "./ourTeam.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
   // fullName, position, classYear, imgPath, email, linkedinProfileUrl
@@ -24,15 +25,15 @@ class Dropdown extends Component {
   render () {
     const { isListOpen } = this.state;
     return (
-      <div className="dd-wrapper">
-        <h1 style={{ color : 'white', fontSize : '50px', float: 'left'}} onClick={this.handleClick}> {this.props.team} </h1>
-        {isListOpen
-          ? <i className="fas fa-angle-up"  onClick={this.handleClick} style={{ color : 'white', fontSize : '65px', float: 'right', marginLeft: '50px'}}></i>
-          : <i className="fas fa-angle-down" onClick={this.handleClick} style={{ color : 'white', fontSize : '65px', float: 'right', marginLeft: '50px'}}></i>}
-
+      <DropDownContainer isListOpen={isListOpen}>
+        <div className="dropDownHeaderOnResize">
+          <h1 className="dropDownHeaderOnResize" onClick={this.handleClick}> {this.props.team} </h1>
+          {isListOpen
+            ? <i className="dropDownArrowOnResize fas fa-angle-up"  onClick={this.handleClick}></i>
+            : <i className="dropDownArrowOnResize fas fa-angle-down" onClick={this.handleClick}></i>}
+        </div>
         {isListOpen && <Members team={this.props.team} status={isListOpen} shortTeam = {this.props.shortTeam}/>}
-
-      </div>
+      </DropDownContainer>
     );
   }
 }

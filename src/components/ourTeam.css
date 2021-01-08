@@ -1,0 +1,43 @@
+.dropDownContainerOnResize{
+    width: 90%;
+    margin: 30px 0;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.dropDownHeaderOnResize{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropDownArrowOnResize{
+    color: black;
+    font-size: 45px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.dropDownHeaderOnResize{
+    color: black;
+    font-size: 30px;
+    font-weight: 450;
+}
+
+@media only screen and (max-width: 700px){
+    .dropDownHeaderOnResize{
+        font-size: 20px !important;
+    }
+
+    .dropDownArrowOnResize{
+        font-size: 25px !important;
+    }
+
+
+}
