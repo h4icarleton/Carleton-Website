@@ -9,7 +9,7 @@ import Dropdown from '../components/Dropdown.js'
 const OurTeam = () => {
   return(
     <div style={{flexDirection:'column', overflowY:'scroll'}}>
-      <div style={{ width:'100%', marginBottom:'auto'}}>
+      <div style={{ width:'100%', marginBottom:'auto', overflowX: 'hidden'}}>
         <SliderContainer slides={BigProfiles} autoPlay={3.5}/>
       </div>
       <div style={{marginTop:'40px', marginBottom:'60px', alignItems:'center', display:'flex', justifyContent:'space-bewteen', flexDirection:'column'}}>
