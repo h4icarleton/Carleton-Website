@@ -27,7 +27,7 @@ function HeaderTypingAnimation() {
                   />
                 </p>
               </div>
-              <Link className='dummyButton butn' to="/getinvolved">get involved</Link>
+              <Link className='butn' to="/getinvolved">get involved</Link>
             </div>
           </div>  
         </>

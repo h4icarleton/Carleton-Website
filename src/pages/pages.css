@@ -28,10 +28,18 @@
 .butn {
   background-color: rgba(0, 62, 126, 1);
   color: rgb(238, 177, 17);
-  font-size: 40px;
+  font-size: 20px;
+  font-weight: 900;
   margin: 6px;
-  padding: 10px;
-  border-radius: 25px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .butn {
+    font-size: 15px;
+    margin-top: 50px;
+  }
 }
 
 .butn:hover {
