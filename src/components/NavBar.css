@@ -1,7 +1,8 @@
 .navbar-nav {
     position: absolute; 
     right: 0px; 
-    font-size: 21px;
+    font-size: 20px;
+    font-weight: 400px;
     margin-top: 3px !important;
     margin-left: 5px !important;
     margin-right: 5px !important; 
@@ -14,7 +15,13 @@
 }
 
 .nav-link:hover {
-    font-weight: bold !important;
+    transition: 0.3s;
+    text-shadow: 2px 2px 4px rgba(0, 62, 126, 0.5);
+}
+
+
+.on-page{
+    text-shadow: 2px 2px 4px  rgba(0, 62, 126, 0.3);
 }
 
 nav {

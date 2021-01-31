@@ -61,16 +61,16 @@ const Nav = () => {
         </span>
         <ul className="navbar-nav" style={ windowSize.width > 650 || display ? {display: 'flex'} : {display: 'none'}}>
             <li className="nav-item">
-                <Link className="nav-link" to="/"  style={ curLocation === '/' ? {fontWeight: 'bold'} : { fontWeight: 'normal' }}>home</Link>
+                <Link className={ curLocation === '/' ? "nav-link on-page" : "nav-link"} to="/" >Home</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/getinvolved"  style={ curLocation === '/getinvolved' ? {fontWeight: 'bold'} : { fontWeight: 'normal' }}>get involved</Link>
+                <Link className={ curLocation === '/getinvolved' ? "nav-link on-page" : "nav-link"} to="/getinvolved">Get Involved</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/about"  style={ curLocation === '/about' ? {fontWeight: 'bold'} : { fontWeight: 'normal' }}>about</Link>
+                <Link className={curLocation === '/about' ? "nav-link on-page" : "nav-link"} to="/about">About</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/ourteam"  style={ curLocation === '/ourteam' ? {fontWeight: 'bold'} : { fontWeight: 'normal' }}>our team</Link>
+                <Link className={ curLocation === '/ourteam' ? "nav-link on-page" : "nav-link"} to="/ourteam">Our Team</Link>
             </li>
         </ul>
     </nav>
