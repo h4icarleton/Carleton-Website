@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import SliderContent from './SliderContent';
 import Slide from './Slide';
-import SliderNextButton from './SliderNextButton';
 
-const getWidth = () => window.innerWidth;
+const getWidth = () => window.innerWidth <= 1200 ? window.innerHeight : 1200; // 1200 is the min width of page wrapper
 const containerStyle = {
                             position: 'relative',
                             height: '100%',
@@ -117,10 +116,6 @@ const SliderContainer = props => {
                 <Slide width={getWidth()} key={slide + i} content={slide} />
             ))}
         </SliderContent>
-        <SliderNextButton
-            width={getWidth()}
-            handleClick={slideRight}
-        />
     </div>
 }
 

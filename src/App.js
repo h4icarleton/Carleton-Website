@@ -6,7 +6,7 @@ import Pages from './pages';
 
 function App() {
   return (
-    <div className="App" style={{position : "absolute"}}>
+    <div className="App">
       <Pages />
     </div>
   );
