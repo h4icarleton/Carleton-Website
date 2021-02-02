@@ -5,6 +5,9 @@ import ReactCardFlip from 'react-card-flip';
 import {CardFront, CardBack} from '../components/Card';
 
 const About = () => {
+    const [clickedA, setClickA] = useState(false);
+    const [clickedB, setClickB] = useState(false);
+    const [clickedC, setClickC] = useState(false);
   return (
     <>
         <div className = "flexingl">
@@ -15,8 +18,8 @@ const About = () => {
             </div>
         </div>  
         <div className = "flexingl cards">
-            <div className="flip-card">
-                <div className="flip-card-inner">
+            <div className="flip-card" onClick={() => setClickA(!clickedA)}>
+                <div className="flip-card-inner" style={ clickedA ? {transform: 'rotateY(180deg)'} : {}}>
                     <div className="flip-card-front">
                         <div className="butnl">
                             Diligence
@@ -30,8 +33,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="flip-card">
-                <div className="flip-card-inner">
+            <div className="flip-card" onClick={() => setClickB(!clickedB)}>
+                <div className="flip-card-inner" style={ clickedB ? {transform: 'rotateY(180deg)'} : {}}>
                     <div className="flip-card-front">
                         <div className="butnl">
                             Diversity
@@ -45,8 +48,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="flip-card">
-                <div className="flip-card-inner">
+            <div className="flip-card" onClick={() => setClickC(!clickedC)}>
+                <div className="flip-card-inner" style={ clickedC ? {transform: 'rotateY(180deg)'} : {}}>
                     <div className="flip-card-front">
                         <div className="butnl">
                             Collaboration
