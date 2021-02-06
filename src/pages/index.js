@@ -6,30 +6,37 @@ import GetInvolved from './GetInvolved';
 import OurTeam from './OurTeam';
 import Error from './Error';
 import Nav from '../components/Nav';
-import ContactUs from '../components/ContactUs';
+import Footer from '../components/Footer';
+import '../index.css';
 
 
 const ReactRouterSetup = () => {
     return <Router>
         <Nav />
-        <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route exact path="/about">
-                <About />
-            </Route>
-            <Route exact path="/getinvolved">
-                <GetInvolved />
-            </Route>
-            <Route exact path="/ourteam">
-                <OurTeam />
-            </Route>
-            <Route path="*">
-                <Error />
-            </Route>
-        </Switch>
-        <ContactUs />
+        <div className='page-wrapper'>
+            <div className='content-wrapper'>
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route exact path="/about">
+                        <About />
+                    </Route>
+                    <Route exact path="/getinvolved">
+                        <GetInvolved />
+                    </Route>
+                    <Route exact path="/ourteam">
+                        <OurTeam />
+                    </Route>
+                    <Route path="*">
+                        <Error />
+                    </Route>
+                </Switch>
+            </div>
+            <Footer />
+        </div>
+
+        
     </Router>;
 }
 
