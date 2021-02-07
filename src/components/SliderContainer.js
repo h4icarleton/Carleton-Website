@@ -9,7 +9,7 @@ const containerStyle = {
                             width: '100vw', 
                             whiteSpace: 'nowrap',
                             display: 'flex',
-                            alignItems: 'center'
+                            alignItems: 'center',
                         };
 
 

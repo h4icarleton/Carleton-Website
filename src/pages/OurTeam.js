@@ -1,14 +1,12 @@
 import React from 'react';
 import SliderContainer from '../components/SliderContainer'
-import MemberProfile from '../components/MemberProfile'
-import MemberProfileContainer from '../components/MemberProfileContainer'
 import './pages.css';
 import BigProfiles from '../components/BigProfiles';
 import Dropdown from '../components/Dropdown.js'
 
 const OurTeam = () => {
   return(
-    <div style={{flexDirection:'column', overflowY:'scroll'}}>
+    <div style={{flexDirection:'column', overflowY:'scroll', marginTop:'12vh'}}>
       <div style={{ width:'100%', marginBottom:'auto', overflowX: 'hidden'}}>
         <SliderContainer slides={BigProfiles} autoPlay={3.5}/>
       </div>

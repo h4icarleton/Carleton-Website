@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Home from './Home';
 import About from './AB';
 import GetInvolved from './GetInvolved';
@@ -16,13 +17,9 @@ const ReactRouterSetup = () => {
         <div className='page-wrapper'>
             <div className='content-wrapper'>
                 <Switch>
-                    <Route exact path="/">
+                    <Route exact path='/'>
                         <Home />
-                    </Route>
-                    <Route exact path="/about">
                         <About />
-                    </Route>
-                    <Route exact path="/getinvolved">
                         <GetInvolved />
                     </Route>
                     <Route exact path="/ourteam">

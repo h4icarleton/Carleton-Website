@@ -7,7 +7,8 @@ const Slide = ({ content, width }) => (
             width: `${width * 90/100}px`,
             marginRight:  `${width * 5/100}px`,
             marginLeft:  `${width * 5/100}px`,
-            borderRadius: '100px'
+            borderRadius: '30px',
+            border: '3px solid #003E7E'
         }}
     >
         {content}

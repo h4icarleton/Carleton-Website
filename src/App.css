@@ -3,14 +3,9 @@
 }
 
 body {
-  background-image: url("https://environmentnewjersey.org/sites/environment/files/WEB_AME_Renewable-Energy-101_Carleton-Wind_16x9.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  padding-top: 15vh;
   padding-bottom: 10vh;  
 }
 

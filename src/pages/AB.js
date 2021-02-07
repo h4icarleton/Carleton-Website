@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './about.css';
 import ReactCardFlip from 'react-card-flip';
 import {CardFront, CardBack} from '../components/Card';
+import './pages.css';
 
 const About = () => {
     const [clickedA, setClickA] = useState(false);
@@ -10,6 +11,8 @@ const About = () => {
     const [clickedC, setClickC] = useState(false);
   return (
     <>
+        <div className="about-background" id="about-scroll"></div>
+        <div className="heading-container about">Our Values</div>
         <div className = "flexingl">
             <div className="containerl">
                 <div className='l-container'>

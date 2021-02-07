@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 const GetInvolved = () => {
   return (
     <div>
+      <div className="heading-container-get-involved" id="getinvolved-scroll">
+        <div className="get-involved">Get Involved</div>
+        <div className="underline"></div>
+      </div>
       <div className = "flexing">
         <div className="containerf startf">
           <div className='t-container'>

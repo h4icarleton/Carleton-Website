@@ -3,11 +3,14 @@ import './HeaderTypingAnimation.css';
 import '../pages/pages.css';
 import Typical from 'react-typical';
 import { Link } from 'react-router-dom';
+import * as Scroll from 'react-scroll';
+let ScrollLink = Scroll.Link;
 
 function HeaderTypingAnimation() {
     return(
         <>
-          <div className='header-wrapper'>
+          <div className='header-wrapper' id="home-scroll">
+            <div className='background-image'></div>
             <div className='header-container'>
               <div className='text-container'>
                 <h1>
@@ -27,7 +30,14 @@ function HeaderTypingAnimation() {
                   />
                 </p>
               </div>
-              <Link className='butn' to="/getinvolved">get involved</Link>
+              
+              <ScrollLink
+                    activeClass="active"
+                    to="getinvolved-scroll" 
+                    spy={true} 
+                    smooth={true} 
+                    duration={500}
+                ><Link className='butn' to="/">get involved</Link></ScrollLink>
             </div>
           </div>  
         </>
