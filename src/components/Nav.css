@@ -29,14 +29,18 @@
     margin-left: 10px;
 }
 
-.nav-link:hover {
-    transition: 0.3s;
-    text-shadow: 2px 2px 4px rgba(0, 62, 126, 0.5);
+.nav-link:after { 
+    background-color: #EEB111;
+    width: 0%;
+    height: 4px;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-
-.on-page{
-    text-shadow: 2px 2px 4px  rgba(0, 62, 126, 0.3);
+.nav-link:hover:after { 
+    width: 10%;
 }
 
 nav {

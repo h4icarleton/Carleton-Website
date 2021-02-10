@@ -10,6 +10,15 @@
 
 }
 
+.footer a{
+    color: #EEB111;
+    font-weight: 500;
+}
+
+.footer:hover a{
+    color: #EEB111;
+}
+
 
 .footer-wrapper{
     max-width: 1200px;
@@ -38,7 +47,7 @@
 
 .column-container p{
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     margin-bottom: 0.3vw;
     color: white;
 }

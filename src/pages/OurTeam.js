@@ -6,7 +6,7 @@ import Dropdown from '../components/Dropdown.js'
 
 const OurTeam = () => {
   return(
-    <div style={{flexDirection:'column', overflowY:'scroll', marginTop:'12vh'}}>
+    <div id="ourteam-scroll" style={{flexDirection:'column', overflowY:'scroll', marginTop:'12vh'}}>
       <div style={{ width:'100%', marginBottom:'auto', overflowX: 'hidden'}}>
         <SliderContainer slides={BigProfiles} autoPlay={3.5}/>
       </div>

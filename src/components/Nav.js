@@ -1,13 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import * as Scroll from 'react-scroll';
-import './NavBar.css';
+import './Nav.css';
 
 let ScrollLink = Scroll.Link;
+let scroller = Scroll.scroller;
+let animateScroll    = Scroll.animateScroll;
 
 const Nav = () => {
     let location = useLocation();
     let locationRef = useRef(location.pathname);
+    let latestNavLocationRef = useRef('home-scroll');
 
     const [curLocation, setLocation] = useState({
         location: location.pathname
@@ -16,6 +19,13 @@ const Nav = () => {
     useEffect(()=> {
         setLocation(location.pathname);
         locationRef.current = location.pathname;
+
+        // scrolls to an element chosen the latest on the nav bar when page changes
+        if(locationRef.current=='/ourteam'){
+            animateScroll.scrollToTop() // to top on our team since there is only one element
+        } else{
+            scroller.scrollTo(latestNavLocationRef.current, {duration: 500, smooth: true});
+        }
     }, [location.pathname]);
 
     const [display, setDisplay] = useState(false);
@@ -67,12 +77,20 @@ const Nav = () => {
 
         document.addEventListener('scroll', handelScroll);
 
-    }, []);
+        handelScroll(); // checks when switched back to home page from a different page
+    }, [location.pathname]);
 
+    const updateNavLocation = (navLocation) => {
+        latestNavLocationRef.current=navLocation;
+    }
     
+    const scrollToTop = () => {
+        animateScroll.scrollToTop();
+    }
+
   return (
     <>
-    <nav className={"navbar navbar-expand-sm navbar-light" + `${isNavbarVisible ? ' transition' : ''}`} style={{position: "fixed", top: 0, left: 0, zIndex : 1, width: "100%", backgroundColor: "rgba(255, 255, 255, 0.8)", opacity:`${isNavbarVisible ? '1' : '0'}`}}>
+    <nav className={"navbar navbar-expand-sm navbar-light" + `${isNavbarVisible ? ' transition' : ''}`} style={{position: "fixed", top: 0, left: 0, zIndex : 1, width: "100%", backgroundColor: "rgba(255, 255, 255, 0.8)", backdropFilter: "blur(4px)", opacity:`${isNavbarVisible ? '1' : '0'}`}}>
         <ScrollLink
             activeClass="active"
             to="home-scroll" 
@@ -80,7 +98,10 @@ const Nav = () => {
             smooth={true} 
             duration={500}
         >
-            <Link className="navbar-brand" style={{padding: '8px'}} to="/">
+            <Link className="navbar-brand" style={{padding: '8px'}} 
+                onClick={() => updateNavLocation('home-scroll')} 
+                to="/"
+            >
                 <div id="h4i"><img id="h4iLogo" src="https://hack4impact.org/svg/logo.svg" alt="Hack4Impact Logo" /></div>
                 <img id="ccLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Carleton_College_logo.svg/1280px-Carleton_College_logo.svg.png" alt="Carleton College"/>
             </Link>
@@ -99,10 +120,15 @@ const Nav = () => {
                     smooth={true} 
                     duration={500}
                 >   
-                    <Link className={ curLocation === '/' ? "nav-link on-page" : "nav-link"} to="/" >Home</Link>
+                    <Link className="nav-link"
+                        onClick={() => updateNavLocation('home-scroll')} 
+                        to="/" 
+                    >
+                        Home
+                    </Link>
                 </ScrollLink> 
             </li>
-            <li className="nav-item">
+            <li className="nav-item" >
                 <ScrollLink
                     activeClass="active"
                     to="getinvolved-scroll" 
@@ -110,25 +136,40 @@ const Nav = () => {
                     smooth={true} 
                     duration={500}
                 >    
-                    <Link className={ curLocation === '/getinvolved' ? "nav-link on-page" : "nav-link"} to="/">Get Involved</Link>
+                    <Link className="nav-link"
+                        onClick={() => updateNavLocation('getinvolved-scroll')} 
+                        to="/" 
+                    >
+                        Get Involved
+                    </Link>
                 </ScrollLink> 
             </li>
-            <li className="nav-item">
+            <li className="nav-item" >
                 <ScrollLink
                     activeClass="active"
-                    className="test3" 
                     to="about-scroll" 
                     spy={true} 
                     smooth={true} 
                     duration={500}
                 >    
-                    <Link className={ curLocation === '/getinvolved' ? "nav-link on-page" : "nav-link"} to="/">About</Link>
+                    <Link 
+                        className="nav-link"
+                        onClick={() => updateNavLocation('about-scroll')} 
+                        to="/"
+                    >
+                        About
+                    </Link>
                 </ScrollLink> 
             </li>
             <li className="nav-item">
-                <ScrollLink>    
-                    <Link className={ curLocation === '/ourteam' ? "nav-link on-page" : "nav-link"} to="/ourteam">Our Team</Link>
-                </ScrollLink> 
+                <ScrollLink>   
+                    <Link className="nav-link"
+                        onClick={scrollToTop}
+                        to="/ourteam"
+                    >
+                        Our Team
+                    </Link>
+                </ScrollLink>
             </li>
         </ul>
     </nav>
