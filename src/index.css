@@ -32,3 +32,10 @@ code {
   margin-right: auto;  
   margin-left:  auto;
 }
+
+@media screen and (max-width: 450px) {
+.content-wrapper {
+  padding: 0 !important; 
+  margin:  0 !important;
+}
+}

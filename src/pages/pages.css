@@ -146,6 +146,7 @@
   }
 
   .containerf {
+    padding-top: 20px;
     width: 94%;
     margin-left: 3%;
     margin-bottom: 80px;
@@ -158,6 +159,10 @@
     width: '33%'; 
     margin: 'auto'; 
     height: '50%';
+  }
+
+  .t-container {
+    padding: 0 !important;
   }
 
 }

@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 import Home from './Home';
 import About from './AB';
 import GetInvolved from './GetInvolved';
@@ -18,15 +17,15 @@ const ReactRouterSetup = () => {
             <div className='content-wrapper'>
                 <Switch>
                     <Route exact path='/'>
-                        <Home />
-                        <About />
+                        <Home/>
+                        <About/>
                         <GetInvolved />
                     </Route>
                     <Route exact path="/ourteam">
                         <OurTeam />
                     </Route>
                     <Route path="*">
-                        <Error />
+                        <Error/>
                     </Route>
                 </Switch>
             </div>
