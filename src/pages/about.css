@@ -50,6 +50,7 @@ body {
   font-weight: 400;
 }
 
+/*Addapted from https://www.w3schools.com/howto/howto_css_flip_card.asp */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -128,5 +129,4 @@ body {
     width: 95%;
     height: 170px;
   }
-
 }

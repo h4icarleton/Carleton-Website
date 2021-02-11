@@ -1,8 +1,5 @@
-import ReactDOM from "react-dom";
 import React, { useState } from 'react';
 import './about.css';
-import ReactCardFlip from 'react-card-flip';
-import {CardFront, CardBack} from '../components/Card';
 import './pages.css';
 
 const About = () => {

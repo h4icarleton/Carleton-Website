@@ -99,6 +99,15 @@ const members = [
 
   },
   {
+      fullName:'Etienne Richart',
+      positon:'Developer',
+      team:'Dev',
+      classYear:'2023',
+      imgPath:'/images/profilePictures/dummy-profile.jpeg',
+      email:'richarte@carleton.edu',
+      linkedinProfileUrl:'https://www.linkedin.com/in/etiennerichart/'
+  },
+  {
 
       fullName:'Tessa Newman-Heggie',
       positon:'Project Lead of Design',

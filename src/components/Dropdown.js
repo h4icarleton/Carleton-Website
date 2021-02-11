@@ -29,8 +29,8 @@ class Dropdown extends Component {
         <div className="dropDownHeaderOnResize">
           <h1 className="dropDownHeaderOnResize" onClick={this.handleClick}> {this.props.team} </h1>
           {isListOpen
-            ? <i className="dropDownArrowOnResize fas fa-angle-up"  onClick={this.handleClick}></i>
-            : <i className="dropDownArrowOnResize fas fa-angle-down" onClick={this.handleClick}></i>}
+            ? <i className="arrow"  onClick={this.handleClick}></i>
+            : <i className="arrowup" onClick={this.handleClick}></i>}
         </div>
         {isListOpen && <Members team={this.props.team} status={isListOpen} shortTeam = {this.props.shortTeam}/>}
       </DropDownContainer>

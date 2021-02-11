@@ -1,4 +1,4 @@
-import './Footer.css';
+import './footer.css';
 
 const Footer = () => {
     const emailLink = <a href="mailto:carleton@hack4impact.org" target="_blank" rel="noopener noreferrer">carleton@hack4impact.org</a>;
