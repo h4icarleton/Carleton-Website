@@ -122,8 +122,13 @@
 }
 
 .butn:hover {
-  background-color: white;
-  color: rgb(238, 177, 17);
+  background-color: rgba(0, 62, 126, 1);
+  color: white;
+}
+
+.aft-btn:hover {
+  background-color: rgb(238, 177, 17);
+  color: rgba(0, 62, 126, 1);
 }
 
 .link {
