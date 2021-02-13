@@ -18,7 +18,6 @@ body {
 
 .containerl {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   max-width: 95%;
   display: flex;
@@ -42,8 +41,9 @@ body {
 }
 
 .l-container p {
-  font-size: 20px !important;
+  font-size: 25px !important;
   font-weight: 400;
+  text-align: left;
 }
 
 .l-container span {
@@ -86,6 +86,7 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
+  font-family: 'Consolas';
   background-color: rgb(3, 64, 125);
   border-radius: 50px;
   border: 3px solid rgb(238, 177, 17);
@@ -97,7 +98,7 @@ body {
 /* Style the back side */
 .flip-card-back {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 50px;
   transform: rotateY(180deg);
   display: flex;
@@ -129,4 +130,22 @@ body {
     width: 95%;
     height: 170px;
   }
+
+}
+
+.heading-container{
+  color: rgb(3, 64, 125);
+}
+
+.heading-container .about {
+  text-align: right !important;
+}
+
+.t-bold {
+  font-weight: bold !important;
+  font-family: 'Consolas';
+}
+
+.our-values {
+  text-align: right !important;
 }

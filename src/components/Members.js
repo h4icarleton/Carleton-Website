@@ -30,15 +30,25 @@ const Members = (props) => {
 
 
 const members = [
+  
   {
-      fullName:'Maya Murphy',
-      position:'Project Lead of Development, Director of Engineering',
-      team:'Dev',
-      classYear:'2022',
-      imgPath:'/images/profilePictures/dummy-profile.jpeg',
-      email:'murphym2@carleton.edu',
-      linkedinProfileUrl:'https://www.linkedin.com/in/maya-murphy-56409a177/',
+    fullName:'Aishwarya Varma',
+    position:'Executive Director and CoFounder',
+    team:'Directors',
+    classYear:'2023',
+    imgPath:'/images/profilePictures/AishwaryaProfile.jpg',
+    email:'varmaa@carleton.edu',
+    linkedinProfileUrl:'https://www.linkedin.com/in/aishwaryavarma01/',
   },
+  {
+    fullName:'Nicole Binder',
+    position:'Executive Director and CoFounder',
+    team:'Directors',
+    classYear:'2021',
+    imgPath:'/images/profilePictures/dummy-profile.jpeg',
+    email:'bindern@carleton.edu',
+    linkedinProfileUrl:'https://www.linkedin.com/school/carleton-college/',
+},
   {
     fullName:'PJ Sangvong',
     position:'Developer',

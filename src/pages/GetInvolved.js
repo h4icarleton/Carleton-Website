@@ -1,9 +1,11 @@
 import React from 'react';
 import './pages.css';
+import { Link } from 'react-router-dom';
 
 const GetInvolved = () => {
   return (
-    <div>
+    <>
+    <div className = "get-involved-background"></div>
       <div className="heading-container-get-involved" id="getinvolved-scroll">
         <div className="get-involved">Get Involved</div>
         <div className="underline"></div>
@@ -18,7 +20,7 @@ const GetInvolved = () => {
             Looking for a way to apply your CS skills that you’ve learned in class to help solve real-world problems that benefit the community? Looking to connect with a group of CS enthusiasts who believe in the power of coding to do good? 
             <br />
             <br />
-            Join <span style={{color: "#5f0f85"}}>our cool team</span> 
+            Join <span style={{color: "#5f0f85"}}><Link to="/ourteam"> our cool team </Link></span>
             </p>
           </div>
           <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdy1IwVayC4PrCBWkLeIXTKSbPeYIZdzGjzK_olB9ffOiAHLA/viewform?usp=sf_link">Apply</a>
@@ -38,7 +40,7 @@ const GetInvolved = () => {
           <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd6afL14jPtALWlvHL_GlgFMo828jGXGcMQMAZfe5ZzcM9ULA/viewform?usp=sf_link">Apply</a>
         </div>
       </div>
-    </div>
+      </>
   )
 }
 

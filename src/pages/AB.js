@@ -8,12 +8,13 @@ const About = () => {
     const [clickedC, setClickC] = useState(false);
   return (
     <>
-        <div className="about-background" id="about-scroll"></div>
-        <div className="heading-container about">Our Values</div>
+
+        <div className = "about-background" id="about-scroll"></div>
+        <div className="heading-container about"><span className = "our-values">Our Values</span></div>
         <div className = "flexingl">
             <div className="containerl">
                 <div className='l-container'>
-                    <p>Technology is changing the world, one line of code at a time. Students at Carleton recognize that nonprofits have their hands tied-- they’re invested in creating social impact. We’re here to help them realize their vision and create a tangible, technological solution that solves their problems.</p>
+                    <p><span className = "t-bold">Technology is changing the world, one line of code at a time. </span>Students at Carleton recognize that nonprofits have their hands tied-- they’re invested in creating social impact. We’re here to help them realize their vision and create a tangible, technological solution that solves their problems.</p>
                 </div>
             </div>
         </div>  
@@ -22,7 +23,7 @@ const About = () => {
                 <div className="flip-card-inner" style={ clickedA ? {transform: 'rotateY(180deg)'} : {}}>
                     <div className="flip-card-front">
                         <div className="butnl">
-                            Diligence
+                            diligence
                         </div>
                     </div>
                     <div className="flip-card-back">
@@ -37,7 +38,7 @@ const About = () => {
                 <div className="flip-card-inner" style={ clickedB ? {transform: 'rotateY(180deg)'} : {}}>
                     <div className="flip-card-front">
                         <div className="butnl">
-                            Diversity
+                            diversity
                         </div>
                     </div>
                     <div className="flip-card-back">
@@ -52,7 +53,7 @@ const About = () => {
                 <div className="flip-card-inner" style={ clickedC ? {transform: 'rotateY(180deg)'} : {}}>
                     <div className="flip-card-front">
                         <div className="butnl">
-                            Collaboration
+                            collaboration
                         </div>
                     </div>
                     <div className="flip-card-back">

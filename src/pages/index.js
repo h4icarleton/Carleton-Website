@@ -8,6 +8,7 @@ import Error from './Error';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import '../index.css';
+import './pages.css';
 
 
 const ReactRouterSetup = () => {
@@ -19,7 +20,7 @@ const ReactRouterSetup = () => {
                     <Route exact path='/'>
                         <Home/>
                         <About/>
-                        <GetInvolved />
+                        <GetInvolved/>
                     </Route>
                     <Route exact path="/ourteam">
                         <OurTeam />

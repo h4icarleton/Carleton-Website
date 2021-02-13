@@ -7,8 +7,8 @@ const Footer = () => {
             <div className="footer-wrapper">
                 <div className="column-container">
                     <h1>Contact Us</h1>
-                    <p>Any question about Hack4Impact@Carleton?</p> 
-                    <p>Send us an email at {emailLink}</p>
+                    <p>Any questions about Hack4Impact Carleton?</p> 
+                    <p>Send us an email at <span className = "email-link">{emailLink}</span></p>
                 </div>
             </div>
         </div>

@@ -71,3 +71,7 @@
         margin-bottom: 0.3vw;
     }
 }
+
+.email-link:hover {
+    text-decoration: underline;
+}

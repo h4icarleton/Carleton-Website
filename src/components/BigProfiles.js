@@ -97,7 +97,7 @@ const BoldText = ({boldText}) => (
  * @param {dictionary} textDict consists of position, name, classOf, email, quote
  */
 const BigProfiles = ({imgPath, textDict}) => (
-    <div className='bigProfile' style={{backgroundColor:'rgba(255, 255, 255, 0.3)', width: '100%', borderRadius: '30px', display: 'flex', justifyContent: 'space-between',position:'relative'}}>
+    <div className='bigProfile' style={{backgroundColor:'rgba(255, 255, 255, 1)', width: '100%', borderRadius: '30px', display: 'flex', justifyContent: 'space-between',position:'relative'}}>
         <div className='ImageAndProfileInfoWrapperOnResize'>
             <ImageContainer  imgPath={imgPath}/>
             <BigProfileInfoTextContainer  textDict={textDict}/> {/*will only appear on small screen*/}
@@ -106,13 +106,13 @@ const BigProfiles = ({imgPath, textDict}) => (
         <BigProfileQuoteTextContainer textDict={textDict}/> {/*will only appear on small screen*/}
     </div>
 )
-const randomQuote1 = "\" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took \"";
-const randomQuote2 = "\" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took \"";
+const randomQuote1 = "\"I love their mission: To empower engineers, designers, activists, and humanitarians to create lasting and impactful social change, fostering the wider adoption of software as a tool for social good. \"";
+const randomQuote2 = "\"I'm excited to work with nonprofits across the world. Hack4Impact members build products to improve the functions of effective nonprofits in their local communities. \"";
 const bigProfileArray =  [
                             <BigProfiles  imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
-                                textDict={{'position':'Project Lead', 'name':'Bob1 LastName','classOf': 2051, 'quote':`${randomQuote1}`}}/>,
+                                textDict={{'position':'', 'name':'','classOf': '', 'quote':`${randomQuote1}`}}/>,
                             <BigProfiles imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
-                                textDict={{'position':'Project Lead', 'name':'Bob2 Mid LastLast', 'classOf': 2020, 'quote':`${randomQuote2}`}}/>,
+                                textDict={{'position':'', 'name':'', 'classOf': '', 'quote':`${randomQuote2}`}}/>,
                             <BigProfiles imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
                                 textDict={{'position':'Project Lead', 'name':'Bob3 BlaBla','classOf': 2077, 'quote':`${randomQuote1}`}}/> 
                         ]
