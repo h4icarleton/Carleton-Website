@@ -1,18 +1,20 @@
 import './Slides.css';
 
-const Slide = ({ content, width }) => (
+const Slide = ({ content, refA, refB}) => (
     <div
         className='slide'
         style={{
-            width: `${width * 90/100}px`,
-            marginRight:  `${width * 5/100}px`,
-            marginLeft:  `${width * 5/100}px`,
+            minWidth: `${refA}px`,
+            marginRight:  `${refB}px`,
+            marginLeft:  `${refB}px`,
             borderRadius: '30px',
-            border: '3px solid #003E7E'
+            border: '3px solid #003E7E', 
+            backgroundColor: `rgb(255, 255, 255)`
         }}
     >
         {content}
     </div>
+    
 )
   
   export default Slide

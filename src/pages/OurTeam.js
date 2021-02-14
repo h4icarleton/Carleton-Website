@@ -1,22 +1,31 @@
-import React from 'react';
+import React, {useRef, useLayoutEffect, useState} from 'react';
 import SliderContainer from '../components/SliderContainer'
 import './pages.css';
 import BigProfiles from '../components/BigProfiles';
 import Dropdown from '../components/Dropdown.js'
 
 const OurTeam = () => {
+  const div = useRef();
+  const indiv = useRef();
+  const [width, setWidth] = useState();
+  const [inwidth, setInWidth] = useState();
+  useLayoutEffect(() => {
+    setWidth(div.current.getBoundingClientRect().width);
+    setInWidth(indiv.current.getBoundingClientRect().width);
+  }, []);
+  
   return(
     <>
     <div className = "our-team-background"></div>
     <div id="ourteam-scroll" style={{flexDirection:'column', overflowY:'scroll', marginTop:'12vh'}}>
       <div style={{ width:'100%', marginBottom:'auto', overflowX: 'hidden'}}>
-        <SliderContainer slides={BigProfiles} autoPlay={3.5}/>
+        <SliderContainer slides={BigProfiles} refA={div} refB={indiv} autoPlay={3.5} width={width} indiv={indiv}/>
       </div>
-      <div style={{marginTop:'40px', marginBottom:'60px', alignItems:'center', display:'flex', justifyContent:'space-bewteen', flexDirection:'column'}}>
-        <Dropdown team="Directors && Leadership" shortTeam ="Directors" teamIndex="Directors"/>
+      <div ref={div} style={{marginTop:'40px', marginBottom:'60px', alignItems:'center', display:'flex', justifyContent:'space-bewteen', flexDirection:'column'}}>
+        <Dropdown team="Directors & Leadership" shortTeam ="Directors" teamIndex="Directors" refer={indiv}/>
         <Dropdown team="Development Team" shortTeam = 'Dev' teamIndex="Dev"/>
-        <Dropdown team="Design && User Research Team" shortTeam = 'Design-User' teamIndex="Design-User"/>
-        <Dropdown team="Code Review && Testing Team" shortTeam = 'Code-Testing' teamIndex="Code-Testing"/>
+        <Dropdown team="Design & User Research Team" shortTeam = 'Design-User' teamIndex="Design-User"/>
+        <Dropdown team="Code Review & Testing Team" shortTeam = 'Code-Testing' teamIndex="Code-Testing"/>
       </div>
     </div>
     </>);

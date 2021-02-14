@@ -105,15 +105,27 @@ const SliderContainer = props => {
             transition: 0
         })
     }
-
+    let width = 0;
+    let margin = 0;
+    let inwidth = 0;
+    if (props.refA.current && props.refB.current){
+        width = props.refA.current.getBoundingClientRect().width;
+        inwidth = props.refB.current.getBoundingClientRect().width;
+    }
+    else {
+        width = props.width;
+        inwidth = props.inwidth;
+    }
+    margin = (width-inwidth) / 2;
+    
     return <div style={containerStyle} ref={sliderRef}>
         <SliderContent 
             translate={translate}
             transition={transition}
-            width={getWidth() * slideList.length}
+            width={width * slideList.length}
         >
             {slideList.map((slide, i) => (
-                <Slide width={getWidth()} key={slide + i} content={slide} />
+                <Slide refA={inwidth} refB={margin} key={slide + i} content={slide}/>
             ))}
         </SliderContent>
     </div>

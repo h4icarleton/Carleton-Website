@@ -26,7 +26,7 @@ class Dropdown extends Component {
   render () {
     const { isListOpen } = this.state;
     return (
-      <DropDownContainer isListOpen={isListOpen}>
+      <DropDownContainer isListOpen={isListOpen} refer={this.props.refer}>
         <div className="dropDownHeaderOnResize">
           <h1 className="dropDownHeaderOnResize"> {this.props.team} </h1>
           {isListOpen
