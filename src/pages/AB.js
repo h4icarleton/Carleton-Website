@@ -8,15 +8,18 @@ const About = () => {
     const [clickedC, setClickC] = useState(false);
   return (
     <>
-
-        <div className = "about-background" id="about-scroll"></div>
-        <div className="heading-container about"><span className = "our-values">Our Values</span></div>
+        <div className="background-container">
+        <div className="about-background"></div>
+        <div className="heading-container about" id="about-scroll">
+            <span className="our-values">Our Values</span>
+        </div>
         <div className = "flexingl">
             <div className="containerl">
                 <div className='l-container'>
                     <p><span className = "t-bold">Technology is changing the world, one line of code at a time. </span>Students at Carleton recognize that nonprofits have their hands tied-- they’re invested in creating social impact. We’re here to help them realize their vision and create a tangible, technological solution that solves their problems.</p>
                 </div>
             </div>
+        </div>
         </div>  
         <div className = "flexingl cards">
             <div className="flip-card" onClick={() => setClickA(!clickedA)}>

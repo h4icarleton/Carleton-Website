@@ -140,6 +140,7 @@ body {
 
 .heading-container .about {
   text-align: right !important;
+  position: relative;
 }
 
 .t-bold {
