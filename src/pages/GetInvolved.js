@@ -6,8 +6,8 @@ const GetInvolved = () => {
   return (
     <>
     <div className = "get-involved-background"></div>
-      <div className="heading-container-get-involved" id="getinvolved-scroll">
-        <div className="get-involved">Get Involved</div>
+      <div className="heading-container-get-involved">
+        <div className="get-involved">Get Involved<div className="getInvScroll" id="getinvolved-scroll"></div></div>
         <div className="underline"></div>
       </div>
       <div className = "flexing">

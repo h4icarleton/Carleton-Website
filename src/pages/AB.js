@@ -9,9 +9,9 @@ const About = () => {
   return (
     <>
         <div className="background-container">
-        <div className="about-background" id="about-scroll"></div>
+        <div className="about-background"></div>
         <div className="heading-container about">
-            <span className="our-values">Our Values</span>
+            <span className="our-values">Our Values</span><div className="abScroll" id="about-scroll"></div>
         </div>
         <div className = "flexingl">
             <div className="containerl">

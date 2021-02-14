@@ -15,8 +15,13 @@
 div > .our-values {
   text-align: right !important;
   margin-right: 10%;
+  position: relative;
 }
 
+.abScroll {
+  position: absolute;
+  top: -100px;
+}
 
 .our-team-background {
   background-image: url("graphics/graphics2.png");
@@ -54,6 +59,15 @@ div > .our-values {
   margin-top: 25vh !important;
   margin-bottom: 10vh !important;
   text-align: center;
+}
+
+.get-involved {
+  position: relative;
+}
+
+.get-involved > .getInvScroll{
+  position: absolute;
+  top: -100px;
 }
 
 .underline{
