@@ -2,8 +2,8 @@
   position: absolute;
   content: url("graphics/graphics.png");
   background-repeat: no-repeat;
-  min-width: clamp(1000px, 120vw, 120vw);
-  min-height: 40vw;
+  min-width: clamp(1658.4px, 120vw, 120vw);
+  min-height: max(552.8px, 40vw);
   top: calc(clamp(168px, 15vw, 16vw)*-1);
   left: calc(clamp(150px, 10vw, 11vw)*-1);
   z-index: -10 !important;
@@ -12,6 +12,10 @@
   transform: rotate(-8deg);
  }
 
+div > .our-values {
+  text-align: right !important;
+  margin-right: 10%;
+}
 
 
 .our-team-background {
@@ -34,6 +38,7 @@
   font-size: 45px;
   font-weight: 500;
   color: black;
+  text-align: right;
 }
 
 .background-container {
