@@ -1,4 +1,5 @@
 .logo{
+    filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%); 
     -o-filter: grayscale(100%); 
@@ -6,6 +7,7 @@
 }
 
 .logo:hover {
+    filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     -o-filter: grayscale(0%);
