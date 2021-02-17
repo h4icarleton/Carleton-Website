@@ -240,7 +240,6 @@ div > .our-values {
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
   transition: transform .4s ease-in-out;
-  margin-top: -2vw;
 }
 
 .arrow:hover {
@@ -250,6 +249,7 @@ div > .our-values {
 
 .arrowup {
   transform: rotate(-135deg);
+  margin-top: 0;
 }
 
 @font-face {
