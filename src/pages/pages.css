@@ -239,6 +239,8 @@ div > .our-values {
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
+  transition: transform .4s ease-in-out;
+  margin-top: -2vw;
 }
 
 .arrow:hover {
@@ -247,20 +249,7 @@ div > .our-values {
 }
 
 .arrowup {
-  box-sizing: border-box;
-  height: 2vw;
-  width: 2vw;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px 0px 0px 1px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-}
-
-.arrowup:hover {
-  border-top-width: 4px;
-  border-left-width: 4px;
-
+  transform: rotate(-135deg);
 }
 
 @font-face {
