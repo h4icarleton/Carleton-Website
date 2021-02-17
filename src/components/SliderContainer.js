@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react'
 import SliderContent from './SliderContent';
 import Slide from './Slide';
 
-const getWidth = () => window.innerWidth <= 1200 ? window.innerHeight : 1200; // 1200 is the min width of page wrapper
 const containerStyle = {
                             position: 'relative',
                             height: '100%',
@@ -17,6 +16,19 @@ const SliderContainer = props => {
     const {slides} = props;
     const currentSlide = slides[0];
     const nextSlide = slides[1];
+
+    let width = 0;
+    let margin = 0;
+    let inwidth = 0;
+    if (props.refA.current && props.refB.current){
+        width = props.refA.current.getBoundingClientRect().width;
+        inwidth = props.refB.current.getBoundingClientRect().width;
+    }
+    else {
+        width = props.width;
+        inwidth = props.inwidth;
+    }
+    margin = (width-inwidth) / 2;
 
     const [state, setState] = useState({
         activeSlide: 0,
@@ -72,12 +84,12 @@ const SliderContainer = props => {
                 clearInterval(interval);
             }
         }
-    }, []);
+    }, [props.autoPlay]);
 
     const slideRight = () => {
         setState({
             ...state,
-            translate: translate + getWidth(),
+            translate: translate + width,
             activeSlide: activeSlide === slides.length - 1 ? 0 : activeSlide + 1
         });
     }
@@ -96,7 +108,7 @@ const SliderContainer = props => {
 
     useEffect(() => {
         if(transition === 0) setState({...state, transition: 0.3});
-    }, [transition])
+    }, [transition, state])
 
     const handleResize = () => {
         setState({
@@ -105,18 +117,6 @@ const SliderContainer = props => {
             transition: 0
         })
     }
-    let width = 0;
-    let margin = 0;
-    let inwidth = 0;
-    if (props.refA.current && props.refB.current){
-        width = props.refA.current.getBoundingClientRect().width;
-        inwidth = props.refB.current.getBoundingClientRect().width;
-    }
-    else {
-        width = props.width;
-        inwidth = props.inwidth;
-    }
-    margin = (width-inwidth) / 2;
     
     return <div style={containerStyle} ref={sliderRef}>
         <SliderContent 
