@@ -22,7 +22,7 @@ const Members = (props) => {
     return (<MemberProfileContainer>
     {members.map((person, index) => (
         isListOpen && isMemberArray[index] &&
-        <MemberProfile fullName={person.fullName} position={person.position} classYear={person.classYear} imgPath={person.imgPath} email={person.email} linkedinProfileUrl={person.linkedinProfileUrl} />
+        <MemberProfile key={person.fullName} fullName={person.fullName} position={person.position} classYear={person.classYear} imgPath={person.imgPath} email={person.email} linkedinProfileUrl={person.linkedinProfileUrl} />
     ))}
     </MemberProfileContainer>)
       
