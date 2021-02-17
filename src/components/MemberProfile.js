@@ -17,7 +17,7 @@ const LinkText = ({text, email}) => (
 const MemberProfile = (props) => {
     return <div style={{ width:'350px', height:'200px' ,display:'flex', flexDirection:'row', justifyContent:'space-around', padding:'10px 5px'}}>
         <div style={{width:'130px'}}>
-            <img src={`${process.env.PUBLIC_URL}${props.imgPath}`} style={{width:'100%', clipPath:'circle(50% at 50% 50%)'}} alt="Progile Image" />
+            <img src={`${process.env.PUBLIC_URL}${props.imgPath}`} style={{width:'100%', clipPath:'circle(50% at 50% 50%)'}} alt={`${props.fullName}`} />
         </div>
         <div style={{display:"flex", flexDirection:'column', width:'200px'}}>
             <NormalText normalText={`${props.fullName}`}/>

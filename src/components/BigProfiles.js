@@ -8,6 +8,7 @@ const ImageContainer = ({imgPath}) => (
             {width: '80%',
             clipPath: 'circle(50% at 50% 50%)'}
         }
+        alt="hack4impact member"
     ></img>
 )
 

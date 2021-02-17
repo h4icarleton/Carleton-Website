@@ -2,8 +2,6 @@ import Members from './Members';
 import React, {Component} from 'react';
 import DropDownContainer from './DropDownContainer'
 import "./ourTeam.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
   // fullName, position, classYear, imgPath, email, linkedinProfileUrl
 class Dropdown extends Component {
@@ -18,10 +16,11 @@ class Dropdown extends Component {
 
   handleClick() {
     const { isListOpen } = this.state;
-    {isListOpen
-      ? this.setState({ isListOpen : false }, () => console.log(this.state.isListOpen))
-      : this.setState({ isListOpen : true }, () => console.log(this.state.isListOpen))}
-    }
+    isListOpen
+      ? this.setState({ isListOpen : false })
+      : this.setState({ isListOpen : true });
+  }
+    
   
   render () {
     const { isListOpen } = this.state;
