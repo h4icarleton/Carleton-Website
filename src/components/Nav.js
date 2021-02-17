@@ -12,16 +12,11 @@ const Nav = () => {
     let locationRef = useRef(location.pathname);
     let latestNavLocationRef = useRef('home-scroll');
 
-    const [curLocation, setLocation] = useState({
-        location: location.pathname
-    });
-
     useEffect(()=> {
-        setLocation(location.pathname);
         locationRef.current = location.pathname;
 
         // scrolls to an element chosen the latest on the nav bar when page changes
-        if(locationRef.current=='/ourteam'){
+        if(locationRef.current==='/ourteam'){
             animateScroll.scrollToTop() // to top on our team since there is only one element
         } else{
             scroller.scrollTo(latestNavLocationRef.current, {duration: 500, smooth: true});
@@ -90,7 +85,7 @@ const Nav = () => {
 
   return (
     <>
-    <nav className={"navbar navbar-expand-sm navbar-light" + `${isNavbarVisible ? ' transition' : ''}`} style={{position: "fixed", top: 0, left: 0, zIndex : 1, width: "100%", backgroundColor: "rgba(255, 255, 255, 0.8)", backdropFilter: "blur(4px)", opacity:`${isNavbarVisible ? '1' : '0'}`}}>
+    <nav className={`navbar navbar-expand-sm navbar-light ${isNavbarVisible ? ' transition' : ''}`} style={{position: "fixed", top: 0, left: 0, zIndex : 1, width: "100%", backgroundColor: "rgba(255, 255, 255, 0.8)", backdropFilter: "blur(4px)", opacity:`${isNavbarVisible ? '1' : '0'}`}}>
         <ScrollLink
             activeClass="active"
             to="home-scroll" 
@@ -162,7 +157,7 @@ const Nav = () => {
                 </ScrollLink> 
             </li>
             <li className="nav-item">
-                <ScrollLink>   
+                <ScrollLink to="">   
                     <Link className="nav-link"
                         onClick={scrollToTop}
                         to="/ourteam"
