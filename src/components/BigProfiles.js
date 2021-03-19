@@ -88,7 +88,8 @@ const BoldText = ({boldText}) => (
             width: '90%', 
             height: '40%', 
             whiteSpace: 'initial',
-            fontFamily: 'Arial',
+            fontFamily: 'Roboto',
+            fontWeight: '500'
             }}>{boldText}</p>
 )
 
@@ -107,14 +108,12 @@ const BigProfiles = ({imgPath, textDict}) => (
         <BigProfileQuoteTextContainer textDict={textDict}/> {/*will only appear on small screen*/}
     </div>
 )
-const randomQuote1 = "\"I love their mission: To empower engineers, designers, activists, and humanitarians to create lasting and impactful social change, fostering the wider adoption of software as a tool for social good. \"";
-const randomQuote2 = "\"I'm excited to work with nonprofits across the world. Hack4Impact members build products to improve the functions of effective nonprofits in their local communities. \"";
+const randomQuote1 = "\"I love their mission: To empower engineers, designers, activists, and humanitarians to create lasting and impactful social change, fostering the wider adoption of software as a tool for social good.\"";
+const randomQuote2 = "\"I'm excited to work with nonprofits across the world. Hack4Impact members build products to improve the functions of effective nonprofits in their local communities.\"";
 const bigProfileArray =  [
-                            <BigProfiles  imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
+                            <BigProfiles  imgPath={'/images/profilePictures/carleton.png'} 
                                 textDict={{'position':'', 'name':'','classOf': '', 'quote':`${randomQuote1}`}}/>,
-                            <BigProfiles imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
-                                textDict={{'position':'', 'name':'', 'classOf': '', 'quote':`${randomQuote2}`}}/>,
-                            <BigProfiles imgPath={'/images/profilePictures/dummy-profile.jpeg'} 
-                                textDict={{'position':'Project Lead', 'name':'Bob3 BlaBla','classOf': 2077, 'quote':`${randomQuote1}`}}/> 
+                            <BigProfiles imgPath={'/images/profilePictures/carleton.png'} 
+                                textDict={{'position':'', 'name':'', 'classOf': '', 'quote':`${randomQuote2}`}}/>
                         ]
 export default bigProfileArray

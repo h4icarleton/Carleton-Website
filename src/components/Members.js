@@ -20,10 +20,11 @@ const Members = (props) => {
   })
 
     return (<MemberProfileContainer>
-    {members.map((person, index) => (
-        isListOpen && isMemberArray[index] &&
+    {members.map((person, index) => {
+        return isListOpen && isMemberArray[index] &&
         <MemberProfile key={person.fullName} fullName={person.fullName} position={person.position} classYear={person.classYear} imgPath={person.imgPath} email={person.email} linkedinProfileUrl={person.linkedinProfileUrl} />
-    ))}
+    }
+    )}
     </MemberProfileContainer>)
       
 }
@@ -36,7 +37,7 @@ const members = [
     position:'Executive Director and CoFounder',
     team:'Directors',
     classYear:'2023',
-    imgPath:'/images/profilePictures/AishwaryaProfile.jpg',
+    imgPath:'/images/profilePictures/dummy-profile.jpeg',
     email:'varmaa@carleton.edu',
     linkedinProfileUrl:'https://www.linkedin.com/in/aishwaryavarma01/',
   },

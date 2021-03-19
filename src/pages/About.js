@@ -45,9 +45,8 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flip-card-back">
-                        <p>Carleton is a liberal arts college; unlike other schools, it focuses on providing its students (Carls) with a personalized,
-              well-rounded education. Therefore, Carls are unique. Here at Hack4Impact Carleton we focus on using our diverse skillset to 
-              create innovative technological solutions that help our community.
+                        <p>Carls are not only diligent, but also politically progressive and socially active. At H4I Carleton, we’re committed to promoting diversity in CS. People of color and women are already underrepresented in the field, thus it is our mission to diversify the narrative by providing opportunities for these communities to get real-world software experience.
+
                         </p>
                     </div>
                 </div>
@@ -60,9 +59,8 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flip-card-back">
-                        <p>Carleton is a liberal arts college; unlike other schools, it focuses on providing its students (Carls) with a personalized,
-              well-rounded education. Therefore, Carls are unique. Here at Hack4Impact Carleton we focus on using our diverse skillset to 
-              create innovative technological solutions that help our community.
+                        <p>Carleton is a small college with only 1,500 students. In other words, we tend to be extremely close-knit. At a time like this, social connection is increasingly difficult, making it hard to maintain solid relationships. However, this won’t deter us-- although we’re working remotely, our team is persistent, engaged, and community-driven.
+
                         </p>
                     </div>
                 </div>
