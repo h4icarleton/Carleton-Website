@@ -8,10 +8,8 @@ const OurTeam = () => {
   const div = useRef();
   const indiv = useRef();
   const [width, setWidth] = useState();
-  const [inwidth, setInWidth] = useState();
   useLayoutEffect(() => {
     setWidth(div.current.getBoundingClientRect().width);
-    setInWidth(indiv.current.getBoundingClientRect().width);
   }, []);
 
   return (
