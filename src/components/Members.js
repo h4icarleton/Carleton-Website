@@ -13,9 +13,9 @@ const Members = (props) => {
   const isMemberArray = [];
   members.map((person) => {
     if (props.shortTeam === person.team) {
-      isMemberArray.push(true);
+      return isMemberArray.push(true);
     } else {
-      isMemberArray.push(false);
+      return isMemberArray.push(false);
     }
   });
 
