@@ -2,7 +2,6 @@ import React from "react";
 import MemberProfile from "../components/MemberProfile";
 import MemberProfileContainer from "../components/MemberProfileContainer";
 import "../components/Slides.css";
-import "../public/images/profilePictures/";
 
 /**
  *
