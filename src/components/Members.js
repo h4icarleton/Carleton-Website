@@ -110,7 +110,7 @@ const members = [
     position: "Recruitment Lead",
     team: "Social-Marketing",
     classYear: "2022",
-    imgPath: "/images/profilePictures/AishwaryaProfile.jpg",
+    imgPath: "/images/profilePictures/MayaProfile.png",
     email: "varmaa@carleton.edu",
     linkedinProfileUrl: "https://www.linkedin.com/in/aishwaryavarma01/",
   },
