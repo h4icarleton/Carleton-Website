@@ -44,7 +44,7 @@ const Members = (props) => {
 const members = [
   {
     fullName: "Aishwarya Varma",
-    position: "Executive Director and CoFounder",
+    position: "Founder and Product Manager",
     team: "Directors",
     classYear: "2023",
     imgPath: "/images/profilePictures/AishwaryaProfile.JPG",
@@ -98,7 +98,7 @@ const members = [
   },
   {
     fullName: "Aishwarya Varma",
-    positon: "Co-Founder",
+    positon: "Founder",
     team: "Admin",
     classYear: "2023",
     imgPath: "/images/profilePictures/dummy-profile.jpeg",
