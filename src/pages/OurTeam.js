@@ -54,19 +54,9 @@ const OurTeam = () => {
           />
           <Dropdown team="Development Team" shortTeam="Dev" teamIndex="Dev" />
           <Dropdown
-            team="Design & User Research Team"
-            shortTeam="Design-User"
-            teamIndex="Design-User"
-          />
-          <Dropdown
-            team="Code Review & Testing Team"
-            shortTeam="Code-Testing"
-            teamIndex="Code-Testing"
-          />
-          <Dropdown
-            team="Social Media & Marketing Team"
-            shortTeam="Social-Marketing"
-            teamIndex="Social-Marketing"
+            team="Design Team"
+            shortTeam="Design"
+            teamIndex="Design"
           />
         </div>
       </div>
