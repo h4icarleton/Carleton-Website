@@ -4,6 +4,7 @@ import Home from "./Home";
 import About from "./About";
 import GetInvolved from "./GetInvolved";
 import OurTeam from "./OurTeam";
+import Projects from "./Projects";
 import Error from "./Error";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
@@ -24,6 +25,9 @@ const ReactRouterSetup = () => {
             </Route>
             <Route exact path="/ourteam">
               <OurTeam />
+            </Route>
+            <Route exact path="/projects">
+              <Projects />
             </Route>
             <Route path="*">
               <Error />

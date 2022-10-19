@@ -37,7 +37,7 @@ const GetInvolved = () => {
             Submit a project proposal and we’ll make your dreams come true.
             </p>
           </div>
-          <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd6afL14jPtALWlvHL_GlgFMo828jGXGcMQMAZfe5ZzcM9ULA/viewform?usp=sf_link">Apply</a>
+          <a className="butn aft-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdidjiHJ6d4Bp5kbrSvMLuF25Yz_b61ScGolzZYhQgc39RlOw/viewform">Apply</a>
         </div>
       </div>
       </>

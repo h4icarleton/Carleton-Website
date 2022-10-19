@@ -166,6 +166,16 @@ const Nav = () => {
                     </Link>
                 </ScrollLink>
             </li>
+            <li className="nav-item">
+                <ScrollLink to="">   
+                    <Link className="nav-link"
+                        onClick={scrollToTop}
+                        to="/projects"
+                    >
+                        Projects
+                    </Link>
+                </ScrollLink>
+            </li>
         </ul>
     </nav>
     </>

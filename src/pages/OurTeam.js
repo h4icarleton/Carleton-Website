@@ -58,6 +58,21 @@ const OurTeam = () => {
             shortTeam="Design"
             teamIndex="Design"
           />
+          <Dropdown
+            team="Outreach"
+            shortTeam="outreach"
+            teamIndex="Outreach"
+          />
+          <Dropdown
+            team="Product"
+            shortTeam="product"
+            teamIndex="Product"
+          />
+          <Dropdown
+            team="Alumni"
+            shortTeam="alumni"
+            teamIndex="Alumni"
+          />
         </div>
       </div>
     </>

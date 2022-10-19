@@ -23,6 +23,7 @@ const MemberProfile = (props) => {
             <NormalText normalText={`${props.fullName}`}/>
             <NormalText normalText={`${props.position}`}/>
             <NormalText style={{fontSize: '10px'}} normalText={`Class of ${props.classYear}`}/>
+            {props.projects && <NormalText style={{fontSize: '10px'}} normalText={`Projects: ${props.projects}`}/>}
             <div style={{display:"flex", flexDirection:'row', justifyContent:'space-around', alignItems:'center'}}>
                 {props.email ? <LinkText text='Contact Me' email={`${props.email}`}></LinkText> : null}
                 {props.email && props.linkedinProfileUrl ? <NormalText normalText='|'></NormalText> : null}
