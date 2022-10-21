@@ -1,6 +1,5 @@
 .about-background{
   position: absolute;
-  content: url("graphics/graphics.png");
   background-repeat: no-repeat;
   min-width: clamp(1658.4px, 120vw, 120vw);
   min-height: max(552.8px, 40vw);
@@ -13,9 +12,12 @@
  }
 
 div > .our-values {
+  font-family: HK Grotesk;
   text-align: right !important;
   margin-right: 10%;
   position: relative;
+  font-size: 55px;
+  color: #072ac8;
 }
 
 .abScroll {
@@ -114,13 +116,14 @@ div > .our-values {
 }
 
 .butn {
-  background-color: rgba(0, 62, 126, 1);
-  color: rgb(238, 177, 17);
+  background-color: rgba(29, 42, 200, 0);
+  border: 2px solid #072ac8;
+  color: #072ac8;
   font-size: 20px;
   font-weight: 900;
-  margin: 6px;
+  margin: 8px;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 .containerf .butn{
@@ -135,8 +138,8 @@ div > .our-values {
 }
 
 .butn:hover {
-  background-color: rgba(0, 62, 126, 1);
-  color: white;
+  background-color: rgba(29, 42, 200, 1);
+  color: rgba(253, 253, 253, 1);
 }
 
 .aft-btn:hover {
@@ -255,6 +258,13 @@ div > .our-values {
 @font-face {
   font-family: 'Consolas';
   src: url('../fonts/fonts/CONSOLA.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('../fonts/fonts/HKGrotesk-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

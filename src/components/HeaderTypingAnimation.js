@@ -3,6 +3,7 @@ import './HeaderTypingAnimation.css';
 import '../pages/pages.css';
 import Typical from 'react-typical';
 import * as Scroll from 'react-scroll';
+import logo from '../pages/graphics/h4icarleton.png'
 
 let ScrollLink = Scroll.Link;
 
@@ -15,7 +16,7 @@ function HeaderTypingAnimation() {
               <div className='logo-container'>
                  <img 
                   id="cLogo" 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Carleton_College_symbol.svg/1024px-Carleton_College_symbol.svg.png" 
+                  src={logo}
                   alt="Carleton College C logo"
                 />
               </div>
@@ -46,7 +47,7 @@ function HeaderTypingAnimation() {
                     duration={500}
                 >
                   <div className='butn home-butn'>
-                    get involved
+                    learn more
                   </div>
                 </ScrollLink>
             </div>

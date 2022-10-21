@@ -44,6 +44,7 @@ body {
   font-size: 25px !important;
   font-weight: 400;
   text-align: left;
+  font-family: HK Grotesk;
 }
 
 .l-container span {
@@ -85,34 +86,51 @@ body {
 }
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  font-family: 'Consolas';
-  background-color: rgb(3, 64, 125);
+.flip-card-front{
+  font-family: 'Hk Grotesk';
   border-radius: 50px;
-  border: 3px solid rgb(238, 177, 17);
+  border: 4px solid rgb(238, 177, 17);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.collab {
+  background-image: url("../pages/graphics/collaboration.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.diligence {
+  background-image: url("../pages/graphics/diligence.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.diversity {
+  background-image: url("../pages/graphics/diversity.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
 
 /* Style the back side */
 .flip-card-back {
   padding: 10px;
   background-color: rgba(255, 255, 255, 1);
-  border: 3px solid rgb(3, 64, 125);
+  border: 3px solid rgb(7, 42, 200);
   border-radius: 50px;
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(3, 64, 125);
+  color: rgb(7, 42, 200);
   font-weight: bolder;
-  font-family: 'Roboto' !important;
 }
 
 .flip-card-back p {
   font-size: clamp(12px, 1.5em, 20px) !important;
   font-weight: 400;
+  font-family: 'Hk Grotesk';
 }
 
 .butnl {
@@ -122,6 +140,9 @@ body {
   font-weight: 900;
   font-size: 3em;
   overflow: hidden;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
 }
 
 @media screen and (max-width: 970px) {
@@ -148,6 +169,6 @@ body {
 
 .t-bold {
   font-weight: bold !important;
-  font-family: 'Consolas';
+  font-family: 'Hk Grotesk';
 }
 

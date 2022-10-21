@@ -36,7 +36,7 @@ const About = () => {
             className="flip-card-inner"
             style={clickedA ? { transform: "rotateY(180deg)" } : {}}
           >
-            <div className="flip-card-front">
+            <div className="flip-card-front diligence">
               <div className="butnl">diligence</div>
             </div>
             <div className="flip-card-back">
@@ -60,7 +60,7 @@ const About = () => {
             className="flip-card-inner"
             style={clickedB ? { transform: "rotateY(180deg)" } : {}}
           >
-            <div className="flip-card-front">
+            <div className="flip-card-front diversity">
               <div className="butnl">diversity</div>
             </div>
             <div className="flip-card-back">
@@ -85,7 +85,7 @@ const About = () => {
             className="flip-card-inner"
             style={clickedC ? { transform: "rotateY(180deg)" } : {}}
           >
-            <div className="flip-card-front">
+            <div className="flip-card-front collab">
               <div className="butnl">collaboration</div>
             </div>
             <div className="flip-card-back">
